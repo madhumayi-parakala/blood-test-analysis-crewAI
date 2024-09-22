@@ -80,10 +80,3 @@ You can use the following `curl` command to send the request:
 
 ```bash
 curl -X POST -F "pdf=@/path/to/blood_test_report.pdf" -F "email=user@example.com" http://localhost:5000/analyze
-
-
-
-
-
-
-   
