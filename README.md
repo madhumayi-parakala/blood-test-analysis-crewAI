@@ -53,6 +53,20 @@ This project is designed to analyze blood test reports, search for relevant heal
    ```bash
    python app.py
 
+## Testing
+To run the tests, follow these steps:
+
+1. Ensure you have the required dependencies installed:
+   ```bash
+   pip install -r requirements.txt
+
+2. Navigate to the tests directory:
+   '''bash
+   cd tests
+
+3. Run the test suite:
+   '''bash
+   python -m unittest test_app.py
 
 ## Usage
 
@@ -68,23 +82,8 @@ You can use the following `curl` command to send the request:
 curl -X POST -F "pdf=@/path/to/blood_test_report.pdf" -F "email=user@example.com" http://localhost:5000/analyze
 
 
-## Testing
-To run the tests, follow these steps:
 
-1. Ensure you have the required dependencies installed:
-   ```bash
-   pip install -r requirements.txt
 
-2. Navigate to the tests directory:
-   ```bash
-   cd tests
-
-3. Run the test suite:
-   ```bash
-   python -m unittest test_app.py
-
-The tests will verify that text extraction from the PDF is successful and that the report processing returns valid recommendations and articles.
-  
 
 
    
