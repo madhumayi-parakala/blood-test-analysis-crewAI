@@ -34,3 +34,57 @@ This project is designed to analyze blood test reports, search for relevant heal
    ```bash
    git clone https://github.com/madhumayi-parakala/blood-test-analysis-ollama.git
    cd blood-test-analysis-ollama
+
+2. **Create a Virtual Environment**:
+   ```bash
+   python -m venv venv
+
+3. **Install Required Packages**:
+   ```bash
+   pip install -r requirements.txt
+
+4. **Set Up Environment Variables**:
+   Create a .env file and add your API keys:
+   ```bash
+   SERPER_API_KEY=your_serper_api_key
+   OPENAI_API_KEY=your_openai_api_key
+
+5. **Run the Application**:
+   ```bash
+   python app.py
+
+
+## Usage
+
+To analyze a blood test report, send a POST request to the `/analyze` endpoint with the following parameters:
+
+- `pdf`: The blood test report in PDF format.
+- `email`: The user's email address to receive recommendations.
+
+### Example using `curl`
+You can use the following `curl` command to send the request:
+
+```bash
+curl -X POST -F "pdf=@/path/to/blood_test_report.pdf" -F "email=user@example.com" http://localhost:5000/analyze
+
+
+## Testing
+To run the tests, follow these steps:
+
+1. Ensure you have the required dependencies installed:
+   ```bash
+   pip install -r requirements.txt
+
+2. Navigate to the tests directory:
+   ```bash
+   cd tests
+
+3. Run the test suite:
+   ```bash
+   python -m unittest test_app.py
+
+The tests will verify that text extraction from the PDF is successful and that the report processing returns valid recommendations and articles.
+  
+
+
+   
