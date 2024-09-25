@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Environment variables
+.env
+
+# Byte-compiled files
+*.pyc
+*.pyo
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# Pytest
+.cache
+
+# IDE files (e.g., PyCharm, VSCode)
+.idea/
+.vscode/
+*.swp
+
+# Coverage reports
+.coverage
+htmlcov/
