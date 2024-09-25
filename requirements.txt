@@ -1,0 +1,6 @@
+Flask==2.2.3
+python-dotenv==1.0.0
+PyPDF2==1.26.0
+requests==2.28.1
+Flask-Mail==0.9.1
+crewai==0.1.0  # Adjust the version as needed based on the CrewAI library you're using
