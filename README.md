@@ -61,11 +61,11 @@ To run the tests, follow these steps:
    pip install -r requirements.txt
 
 2. Navigate to the tests directory:
-   '''bash
+   ```bash
    cd tests
 
 3. Run the test suite:
-   '''bash
+   ```bash
    python -m unittest test_app.py
 
 ## Usage
